@@ -79,11 +79,11 @@ export function LibraryApp({ initialBooks }: { initialBooks: LibraryBook[] }) {
             <span>Được xây dựng bởi <strong>người yêu sách</strong></span>
           </div>
         </div>
-        <div className="hero-art" aria-label="Những cuốn sách đang mở">
+        <div className="hero-art" role="img" aria-label="Bìa sách The DevOps Handbook và The Phoenix Project">
           <div className="art-orbit orbit-one" /><div className="art-orbit orbit-two" />
           <div className="floating-note note-top">một chương nữa thôi <span>↗</span></div>
-          <div className="hero-book hero-book-back"><span>THINK<br />SLOW</span><small>Daniel Kahneman</small></div>
-          <div className="hero-book hero-book-front"><span>THE<br /><i>CREATIVE</i><br />ACT</span><small>Rick Rubin</small><b>S.</b></div>
+          <div className="hero-book hero-book-back"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-sAwYqhxgjsKNDn0FpE5UiHGTYEfNBi.png" alt="" /></div>
+          <div className="hero-book hero-book-front"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FMJeKGehWHNlrOIy2lf5reOU7yciB8.png" alt="" /></div>
           <div className="floating-note note-bottom"><span className="note-star">✳</span> đọc để hiểu hơn</div>
           <span className="art-caption">THƯ VIỆN CỘNG ĐỒNG · EST. 2025</span>
         </div>
