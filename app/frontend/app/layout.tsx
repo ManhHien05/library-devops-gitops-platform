@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import './pages.css'
 
 export const metadata: Metadata = {
   title: 'Shelf — Thư viện sách cộng đồng',
