@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shelf — khám phá, tìm kiếm và quản lý hành trình đọc sách của bạn.">
+  <title>Shelf — Online Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="library.css">
+</head>
+<body>
+  <div class="ticker" aria-label="Thông điệp thư viện">
+    <div class="ticker-track" id="tickerTrack">
+      <span>YOUR NEXT CHAPTER STARTS HERE</span><i>✦</i><span>READ MORE · DISCOVER MORE</span><i>✦</i><span>A LITTLE KNOWLEDGE GOES A LONG WAY</span><i>✦</i>
+      <span>YOUR NEXT CHAPTER STARTS HERE</span><i>✦</i><span>READ MORE · DISCOVER MORE</span><i>✦</i><span>A LITTLE KNOWLEDGE GOES A LONG WAY</span><i>✦</i>
+    </div>
+  </div>
+
+  <header class="site-header" id="mainNav">
+    <a class="brand" href="#home" aria-label="Shelf trang chủ"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4.5h10.8A3.2 3.2 0 0 1 19 7.7v12H8.2A3.2 3.2 0 0 1 5 16.5v-12Z"/><path d="M5 16.5a3.2 3.2 0 0 1 3.2-3.2H19M9 8h6"/></svg></span><span>Shelf<span class="brand-period">.</span></span></a>
+    <nav class="desktop-nav" aria-label="Điều hướng chính"><a href="#catalog">Khám phá</a><a href="#categories">Thể loại</a><a href="#about">Về thư viện</a></nav>
+    <div class="header-actions"><a class="sign-in" href="#account">Đăng nhập</a><a class="button button-small" href="#catalog">Khám phá sách <span>↗</span></a></div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <div class="mobile-nav" id="mobileNav"><a href="#catalog">Khám phá</a><a href="#categories">Thể loại</a><a href="#about">Về thư viện</a><a href="#account">Đăng nhập</a></div>
+
+  <main>
+    <section class="hero section-grid" id="home">
+      <div class="hero-copy reveal-left">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> KHÔNG GIAN DÀNH CHO NGƯỜI THÍCH ĐỌC</div>
+        <h1>Mỗi cuốn sách<br>mở ra một <em>thế giới.</em></h1>
+        <p class="hero-description">Tìm cuốn sách tiếp theo của bạn. Khám phá những ý tưởng mới, những câu chuyện đáng nhớ và tri thức luôn chờ được mở ra.</p>
+        <div class="hero-actions"><a class="button" href="#catalog">Khám phá bộ sưu tập <span>↗</span></a><a class="text-link" href="#about">Tìm hiểu về Shelf <span>→</span></a></div>
+        <div class="hero-proof"><div class="avatar-stack"><span>AN</span><span>ML</span><span>KT</span><span>+</span></div><p><strong>Đọc mỗi ngày.</strong> Bắt đầu từ một trang sách.</p></div>
+      </div>
+      <div class="hero-art reveal-right" aria-label="Những cuốn sách được tuyển chọn">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="book book-back"><div class="book-cover cover-sand"><small>THE ART OF</small><b>FOCUS</b><span>Finding clarity in a noisy world</span><i>FIELD NOTES · 08</i></div></div>
+        <div class="book book-mid"><div class="book-cover cover-blue"><small>THE</small><b>CREATIVE<br>ACT</b><span>A way of being</span><i>RICK RUBIN</i></div></div>
+        <div class="book book-front"><div class="book-cover cover-cream"><small>THE LITTLE</small><b>PRINCE</b><span>Antoine de Saint-Exupéry</span><i>✳ CLASSIC EDITION</i></div></div>
+        <div class="floating-note note-top"><span class="note-icon">✳</span><span><b>Curated for curious minds</b><small>Những lựa chọn đáng đọc</small></span></div>
+        <div class="floating-note note-bottom"><span class="note-number">01</span><span><b>Read at your own pace</b><small>Một hành trình của riêng bạn</small></span></div>
+        <div class="art-caption">A GOOD BOOK IS A GOOD COMPANION — SHELF LIBRARY</div>
+      </div>
+    </section>
+
+    <section class="stats-band" aria-label="Thông tin thư viện"><div class="stat"><strong>1,200<span>+</span></strong><small>Đầu sách chọn lọc</small></div><div class="stat"><strong>08</strong><small>Nhóm thể loại</small></div><div class="stat"><strong>24/7</strong><small>Khám phá trực tuyến</small></div><div class="stat stat-note"><span class="pulse-dot"></span><small>Một không gian đọc<br>luôn rộng mở</small></div></section>
+
+    <section class="catalog-section" id="catalog">
+      <div class="section-heading reveal"><div><div class="eyebrow">THE COLLECTION</div><h2>Tìm cuốn sách<br><em>của bạn.</em></h2></div><p>Từ những trang sách kinh điển đến các góc nhìn mới mẻ — bắt đầu hành trình bằng điều khiến bạn tò mò.</p></div>
+      <div class="catalog-toolbar">
+        <label class="search-box"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="searchInput" type="search" placeholder="Tìm theo tên sách, tác giả..." autocomplete="off"><kbd>⌕</kbd></label>
+        <label class="sort-control"><span>Sắp xếp</span><select id="sortSelect"><option value="featured">Nổi bật</option><option value="title">Tên sách A–Z</option><option value="author">Tác giả A–Z</option></select></label>
+      </div>
+      <div class="filter-row" id="filterRow" aria-label="Lọc theo thể loại"><button class="filter-chip active" data-category="all">Tất cả sách <span>06</span></button><button class="filter-chip" data-category="fiction">Văn học</button><button class="filter-chip" data-category="business">Kinh doanh</button><button class="filter-chip" data-category="technology">Công nghệ</button><button class="filter-chip" data-category="mindset">Phát triển bản thân</button></div>
+      <div class="book-grid" id="bookGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>Chưa tìm thấy cuốn sách phù hợp</h3><p>Thử một từ khóa khác hoặc chọn thể loại khác nhé.</p><button class="button button-outline" id="resetFilters">Xóa bộ lọc</button></div>
+      <div class="catalog-bottom"><span id="resultCount">Đang hiển thị 6 đầu sách</span><a class="text-link" href="#categories">Khám phá theo thể loại <span>→</span></a></div>
+    </section>
+
+    <section class="categories-section section-grid" id="categories"><div class="section-heading reveal"><div><div class="eyebrow">EXPLORE BY INTEREST</div><h2>Mở lối đến<br><em>điều bạn thích.</em></h2></div><p>Mỗi thể loại là một cánh cửa. Chọn một hướng đi và xem những điều thú vị đang đợi bạn.</p></div>
+      <div class="category-grid"><a class="category-card cat-fiction" href="#catalog" data-jump-category="fiction"><span class="category-index">01 / STORIES</span><span class="category-symbol">文</span><b>Văn học</b><small>Tiểu thuyết · Truyện ngắn</small><span class="category-arrow">↗</span></a><a class="category-card cat-business" href="#catalog" data-jump-category="business"><span class="category-index">02 / IDEAS</span><span class="category-symbol">↗</span><b>Kinh doanh</b><small>Chiến lược · Tài chính</small><span class="category-arrow">↗</span></a><a class="category-card cat-tech" href="#catalog" data-jump-category="technology"><span class="category-index">03 / FUTURE</span><span class="category-symbol">⌘</span><b>Công nghệ</b><small>Lập trình · Khoa học</small><span class="category-arrow">↗</span></a><a class="category-card cat-mind" href="#catalog" data-jump-category="mindset"><span class="category-index">04 / SELF</span><span class="category-symbol">✳</span><b>Phát triển bản thân</b><small>Tư duy · Thói quen</small><span class="category-arrow">↗</span></a></div>
+    </section>
+
+    <section class="about-section" id="about"><div class="about-mark">S.</div><div class="about-copy reveal"><div class="eyebrow">A SPACE TO GROW</div><h2>Không chỉ là nơi<br>tìm sách. Là nơi<br><em>tìm cảm hứng.</em></h2><p>Shelf được tạo ra với một ý tưởng đơn giản: giúp việc khám phá sách trở nên gần gũi, dễ dàng và đầy cảm hứng. Đây là điểm bắt đầu cho những hành trình đọc mới.</p><a class="button button-outline" href="#catalog">Bắt đầu khám phá <span>↗</span></a></div><div class="about-aside"><div class="quote-mark">“</div><blockquote>Một căn phòng không có sách giống như một cơ thể không có linh hồn.</blockquote><small>— CICERO</small><div class="aside-rule"></div><span>READ · REFLECT · REPEAT</span></div></section>
+  </main>
+
+  <footer class="site-footer" id="account"><a class="brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4.5h10.8A3.2 3.2 0 0 1 19 7.7v12H8.2A3.2 3.2 0 0 1 5 16.5v-12Z"/><path d="M5 16.5a3.2 3.2 0 0 1 3.2-3.2H19M9 8h6"/></svg></span><span>Shelf<span class="brand-period">.</span></span></a><p>Một trang sách. Một ý tưởng mới.</p><div class="footer-links"><a href="#catalog">Khám phá</a><a href="#categories">Thể loại</a><a href="#about">Giới thiệu</a></div><small class="copyright">© 2026 Shelf Library. Template design adapted from <a href="https://templatemo.com/" target="_blank" rel="noopener">TemplateMo</a> (CC BY 3.0).</small></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="library.js"></script>
+</body>
+</html>
