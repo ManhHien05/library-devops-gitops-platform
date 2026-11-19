@@ -56,12 +56,14 @@ export function LibraryApp({ initialBooks }: { initialBooks: LibraryBook[] }) {
           <span className="brand-name">shelf<span className="brand-period">.</span></span>
         </Link>
         <nav className="top-nav" aria-label="Điều hướng chính">
-          <a className="nav-link active" href="#library">Thư viện</a>
+          <Link className="nav-link active" href="/">Trang chủ</Link>
+          <Link className="nav-link" href="/books">Kho sách</Link>
+          <Link className="nav-link" href="/my-library">Kệ của tôi</Link>
           <a className="nav-link" href="#about">Về Shelf</a>
         </nav>
         <div className="top-actions">
-          <Link className="login-link" href="/sign-in">Đăng nhập</Link>
-          <Link className="button button-dark button-small" href="/sign-up">Tham gia Shelf <span aria-hidden="true">↗</span></Link>
+          <Link className="login-link" href="/login">Đăng nhập</Link>
+          <Link className="button button-dark button-small" href="/register">Tham gia Shelf <span aria-hidden="true">↗</span></Link>
         </div>
       </header>
 
@@ -71,8 +73,8 @@ export function LibraryApp({ initialBooks }: { initialBooks: LibraryBook[] }) {
           <h1 id="hero-title">Một cuốn sách hay<br />nên được <br className="mobile-hero-break" /><em>đọc nhiều lần.</em></h1>
           <p className="hero-description">Khám phá những cuốn sách cộng đồng yêu thích, đọc ngay trên trình duyệt và chia sẻ cuốn sách đã thay đổi góc nhìn của bạn.</p>
           <div className="hero-actions">
-            <a className="button button-dark" href="#library">Khám phá thư viện <span aria-hidden="true">↓</span></a>
-            <button className="button button-light" onClick={() => setShowUpload(true)}><span className="plus-icon" aria-hidden="true">＋</span> Chia sẻ sách</button>
+            <Link className="button button-dark" href="/books">Khám phá thư viện <span aria-hidden="true">↗</span></Link>
+            <button className="button button-light" onClick={() => setShowUpload(true)}><span className="plus-icon" aria-hidden="true">+</span> Chia sẻ sách</button>
           </div>
           <div className="hero-social-proof">
             <div className="avatar-stack" aria-hidden="true"><span>H</span><span>M</span><span>L</span><span>+</span></div>
@@ -84,7 +86,7 @@ export function LibraryApp({ initialBooks }: { initialBooks: LibraryBook[] }) {
           <div className="floating-note note-top">một chương nữa thôi <span>↗</span></div>
           <div className="hero-book hero-book-back"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-sAwYqhxgjsKNDn0FpE5UiHGTYEfNBi.png" alt="" /></div>
           <div className="hero-book hero-book-front"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FMJeKGehWHNlrOIy2lf5reOU7yciB8.png" alt="" /></div>
-          <div className="floating-note note-bottom"><span className="note-star">✳</span> đọc để hiểu hơn</div>
+          <div className="floating-note note-bottom"><span className="note-star">•</span> đọc để hiểu hơn</div>
           <span className="art-caption">THƯ VIỆN CỘNG ĐỒNG · EST. 2025</span>
         </div>
       </section>

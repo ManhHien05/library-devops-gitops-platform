@@ -27,8 +27,8 @@ export function AuthForm({ mode }: { mode: 'sign-in' | 'sign-up' }) {
           {notice && <p className="prototype-note" role="status">Đây là bản xem trước UI/UX. Thông tin chưa được gửi hoặc lưu.</p>}
           <button className="button button-dark submit-button">{isSignUp ? 'Tạo tài khoản' : 'Đăng nhập'} <span aria-hidden="true">↗</span></button>
         </form>
-        <p className="auth-switch">{isSignUp ? 'Đã có tài khoản?' : 'Chưa có tài khoản?'} <Link href={isSignUp ? '/sign-in' : '/sign-up'}>{isSignUp ? 'Đăng nhập' : 'Tham gia Shelf'}</Link></p>
-        <Link className="auth-back" href="/">← Quay về thư viện</Link>
+        <p className="auth-switch">{isSignUp ? 'Đã có tài khoản?' : 'Chưa có tài khoản?'} <Link href={isSignUp ? '/login' : '/register'}>{isSignUp ? 'Đăng nhập' : 'Tham gia Shelf'}</Link></p>
+        <Link className="auth-back" href="/books">← Quay về kho sách</Link>
       </section>
       <div className="auth-quote"><span aria-hidden="true">“</span>Một căn phòng không sách<br />giống như một cơ thể không có linh hồn.<small>— Marcus Tullius Cicero</small></div>
     </main>
